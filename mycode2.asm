@@ -1,9 +1,9 @@
 .MODEL SMALL
 .STACK 100h
 .DATA
-Msg1 DB ‘Nhap vao ki tu thuong : $’
-Msg2 DB 0Dh,0Ah,’Chuyen sang ki tu hoa la : ‘
-Char DB ?,’$’
+Msg1 DB â€˜Nhap vao ki tu thuong : $â€™
+Msg2 DB 0Dh,0Ah,â€™Chuyen sang ki tu hoa la : â€˜
+Char DB ?,â€™$â€™
 .CODE
 Main PROC
 MOV AX,@DATA
@@ -24,5 +24,6 @@ INT 21h
 ; Ket thuc chuong trinh
 MOV AH,4Ch
 INT 21h
+; dong nay them vao
 Main ENDP
 END Main
